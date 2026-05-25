@@ -10,7 +10,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 4
+    "page_number": 4,
+    "image_url": "/images/products/page_4.png"
   },
   {
     "id": "psf-505c",
@@ -23,7 +24,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 4
+    "page_number": 4,
+    "image_url": "/images/products/page_4.png"
   },
   {
     "id": "bswp-psf001",
@@ -36,7 +38,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 4
+    "page_number": 4,
+    "image_url": "/images/products/page_4.png"
   },
   {
     "id": "bs-113",
@@ -49,7 +52,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 5
+    "page_number": 5,
+    "image_url": "/images/products/page_5.png"
   },
   {
     "id": "bs-115",
@@ -62,7 +66,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 5
+    "page_number": 5,
+    "image_url": "/images/products/page_5.png"
   },
   {
     "id": "bsp-114s",
@@ -75,7 +80,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 5
+    "page_number": 5,
+    "image_url": "/images/products/page_5.png"
   },
   {
     "id": "bs-114",
@@ -88,7 +94,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 5
+    "page_number": 5,
+    "image_url": "/images/products/page_5.png"
   },
   {
     "id": "bsok-260s",
@@ -101,7 +108,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 6
+    "page_number": 6,
+    "image_url": "/images/products/page_6.png"
   },
   {
     "id": "bs-111",
@@ -114,7 +122,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 6
+    "page_number": 6,
+    "image_url": "/images/products/page_6.png"
   },
   {
     "id": "bsok-bcd076",
@@ -127,7 +136,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 6
+    "page_number": 6,
+    "image_url": "/images/products/page_6.png"
   },
   {
     "id": "bsok-9500",
@@ -140,7 +150,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 7
+    "page_number": 7,
+    "image_url": "/images/products/page_7.png"
   },
   {
     "id": "bsok-9610",
@@ -153,7 +164,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 7
+    "page_number": 7,
+    "image_url": "/images/products/page_7.png"
   },
   {
     "id": "bsok-9510",
@@ -166,7 +178,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 7
+    "page_number": 7,
+    "image_url": "/images/products/page_7.png"
   },
   {
     "id": "h60-75",
@@ -179,7 +192,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 8
+    "page_number": 8,
+    "image_url": "/images/products/page_8.png"
   },
   {
     "id": "h55-704",
@@ -192,7 +206,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 10
+    "page_number": 10,
+    "image_url": "/images/products/page_10.png"
   },
   {
     "id": "zbd-1g",
@@ -205,7 +220,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 11
+    "page_number": 11,
+    "image_url": "/images/products/page_11.png"
   },
   {
     "id": "zbd-1r",
@@ -218,7 +234,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 11
+    "page_number": 11,
+    "image_url": "/images/products/page_11.png"
   },
   {
     "id": "mmd-1p",
@@ -231,7 +248,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 11
+    "page_number": 11,
+    "image_url": "/images/products/page_11.png"
   },
   {
     "id": "mmd-1g",
@@ -244,7 +262,8 @@
     "colors_available": true,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 12
+    "page_number": 12,
+    "image_url": "/images/products/page_12.png"
   },
   {
     "id": "mmd-1r",
@@ -257,7 +276,8 @@
     "colors_available": true,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 12
+    "page_number": 12,
+    "image_url": "/images/products/page_12.png"
   },
   {
     "id": "ok-8090",
@@ -270,7 +290,8 @@
     "colors_available": true,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 12
+    "page_number": 12,
+    "image_url": "/images/products/page_12.png"
   },
   {
     "id": "h51-63",
@@ -283,7 +304,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 13
+    "page_number": 13,
+    "image_url": "/images/products/page_13.png"
   },
   {
     "id": "h68-80",
@@ -296,7 +318,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 13
+    "page_number": 13,
+    "image_url": "/images/products/page_13.png"
   },
   {
     "id": "h64-75",
@@ -309,7 +332,8 @@
     "colors_available": false,
     "is_best_seller": false,
     "is_new": false,
-    "page_number": 14
+    "page_number": 14,
+    "image_url": "/images/products/page_14.png"
   },
   {
     "id": "bsl-136",

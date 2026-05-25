@@ -164,7 +164,7 @@ export default function PreschoolPage() {
               </div>
 
               <div className="mt-6 flex justify-between items-center pt-4 border-t border-slate-50">
-                <span className="font-display text-base font-extrabold text-primary">${desk.price}</span>
+                <span className="font-display text-base font-extrabold text-primary">₹{desk.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${desk.id}`}
@@ -240,7 +240,7 @@ export default function PreschoolPage() {
                 <p className="text-[10px] text-slate-400 mt-0.5">MODEL: {seat.modelCode}</p>
               </div>
               <div className="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between">
-                <span className="text-primary font-bold text-xs">${seat.price}</span>
+                <span className="text-primary font-bold text-xs">₹{seat.price}</span>
                 <button
                   onClick={() => handleAddToCart(seat.id, seat.name, seat.price)}
                   disabled={addedItem === seat.id}
@@ -302,7 +302,7 @@ export default function PreschoolPage() {
               </div>
 
               <div className="mt-6 flex justify-between items-center pt-4 border-t border-slate-50">
-                <span className="font-display text-base font-extrabold text-primary">${item.price}</span>
+                <span className="font-display text-base font-extrabold text-primary">₹{item.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${item.id}`}
@@ -407,8 +407,8 @@ export default function PreschoolPage() {
               </li>
             </ul>
             <div className="flex items-baseline gap-4 pt-2">
-              <span className="text-3xl font-extrabold text-primary-container">$549</span>
-              <span className="text-sm line-through text-slate-500">$645</span>
+              <span className="text-3xl font-extrabold text-primary-container">₹549</span>
+              <span className="text-sm line-through text-slate-500">₹645</span>
             </div>
             <button
               onClick={handleAddBundle}
@@ -427,7 +427,7 @@ export default function PreschoolPage() {
               <p className="text-2xs font-bold uppercase tracking-widest text-slate-400">Bundle Setup Layout Showcase</p>
             </div>
             <div className="absolute -bottom-4 -right-4 bg-tertiary-container text-on-tertiary-container p-4 rounded-xl shadow-xl rotate-6">
-              <p className="font-display font-bold text-sm">Save $96</p>
+              <p className="font-display font-bold text-sm">Save ₹96</p>
             </div>
           </div>
         </div>

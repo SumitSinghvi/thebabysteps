@@ -68,7 +68,7 @@ export default function CartDrawer() {
 
                   <div className="flex-1 min-w-0">
                     <h3 className="text-sm font-semibold text-slate-800 truncate">{item.name}</h3>
-                    <p className="text-xs text-rose-500 font-bold mt-0.5">${item.price.toFixed(2)}</p>
+                    <p className="text-xs text-rose-500 font-bold mt-0.5">₹{item.price.toFixed(2)}</p>
 
                     {/* Quantity controls */}
                     <div className="flex items-center gap-2 mt-2">
@@ -106,15 +106,12 @@ export default function CartDrawer() {
               <div className="space-y-1.5">
                 <div className="flex justify-between text-sm text-slate-500">
                   <span>Subtotal</span>
-                  <span>${totalAmount.toFixed(2)}</span>
+                  <span>₹{totalAmount.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between text-sm text-slate-500">
-                  <span>Shipping</span>
-                  <span className="text-emerald-600 font-semibold">Free</span>
-                </div>
+
                 <div className="flex justify-between text-base font-bold text-slate-800 pt-1.5 border-t border-slate-200">
                   <span>Total</span>
-                  <span>${totalAmount.toFixed(2)}</span>
+                  <span>₹{totalAmount.toFixed(2)}</span>
                 </div>
               </div>
 

@@ -205,8 +205,8 @@ export default function StoreHomePage() {
           
           <div className="md:col-span-4 h-48 bg-primary-container/20 rounded-2xl flex flex-col justify-center items-center text-center p-6 border border-primary-container/30">
             <Truck className="h-8 w-8 text-primary mb-3 stroke-1" />
-            <h4 className="font-display text-sm font-bold text-on-primary-container">Free Shipping Over $150</h4>
-            <p className="text-2xs text-on-primary-container/80 mt-1">Fast and insured parcel delivery</p>
+            <h4 className="font-display text-sm font-bold text-on-primary-container">Fast and insured parcel delivery</h4>
+            <p className="text-2xs text-on-primary-container/80 mt-1">Safe and secure shipping direct to your doorstep</p>
           </div>
 
           <div className="md:col-span-4 h-48 bg-tertiary-container/20 rounded-2xl flex flex-col justify-center items-center text-center p-6 border border-tertiary-container/30">

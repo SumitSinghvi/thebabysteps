@@ -106,7 +106,7 @@ export default function WallToysPage() {
               </div>
 
               <div className="p-6 pt-0 mt-auto flex justify-between items-center">
-                <span className="font-display text-base font-extrabold text-primary">${p.price}</span>
+                <span className="font-display text-base font-extrabold text-primary">₹{p.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${p.id}`}

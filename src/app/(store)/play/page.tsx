@@ -72,7 +72,7 @@ export default function PlayroomPage() {
       ageRange: p.category.includes('Slides') ? 'Ages 2-5' : 'Ages 3-8',
       modelCode: p.model_code,
       hasDetails: true,
-      imageUrl: null
+      imageUrl: p.image_url || null
     };
   };
 
@@ -170,7 +170,7 @@ export default function PlayroomPage() {
                   <h3 className="font-display text-base font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-1">
                     {p.name}
                   </h3>
-                  <span className="font-display text-base font-extrabold text-primary">${p.price}</span>
+                  <span className="font-display text-base font-extrabold text-primary">₹{p.price}</span>
                 </div>
                 <p className="text-xs text-on-surface-variant leading-relaxed">
                   {p.description}

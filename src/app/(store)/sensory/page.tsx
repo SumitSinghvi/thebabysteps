@@ -126,7 +126,7 @@ export default function SensoryPage() {
               </div>
 
               <div className="flex justify-between items-center mt-6 pt-4 border-t border-slate-50">
-                <span className="font-display text-base font-extrabold text-primary">${p.price}</span>
+                <span className="font-display text-base font-extrabold text-primary">₹{p.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${p.id}`}
@@ -205,7 +205,7 @@ export default function SensoryPage() {
               </div>
 
               <div className="flex justify-between items-center mt-6 pt-4 border-t border-slate-50">
-                <span className="font-display text-base font-extrabold text-primary">${p.price}</span>
+                <span className="font-display text-base font-extrabold text-primary">₹{p.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${p.id}`}
@@ -346,7 +346,7 @@ export default function SensoryPage() {
                 <p className="text-[9px] text-slate-400">MODEL: {p.modelCode}</p>
               </div>
               <div className="mt-4 pt-2 border-t border-slate-50 flex items-center justify-between">
-                <p className="text-primary font-bold text-xs">${p.price}</p>
+                <p className="text-primary font-bold text-xs">₹{p.price}</p>
                 <button
                   onClick={() => handleAddToCart(p.id, p.name, p.price)}
                   disabled={addedItem === p.id}

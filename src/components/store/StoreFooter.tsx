@@ -15,6 +15,9 @@ export default function StoreFooter() {
             &copy; {new Date().getFullYear()} TheBabySteps. Built with love for little feet.
           </p>
           <div className="flex gap-4 text-xs text-slate-500">
+            <Link href="/our-story" className="hover:text-rose-500 transition-colors">
+              Our Story
+            </Link>
             <Link href="/" className="hover:text-rose-500 transition-colors">
               Privacy Policy
             </Link>

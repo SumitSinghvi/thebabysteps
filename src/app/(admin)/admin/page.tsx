@@ -24,7 +24,7 @@ export default function AdminPage() {
 
   // Stats Data
   const stats = [
-    { label: 'Total Revenue', value: '$45,820.00', change: '+12.5%', icon: DollarSign, color: 'text-emerald-500' },
+    { label: 'Total Revenue', value: '₹45,820.00', change: '+12.5%', icon: DollarSign, color: 'text-emerald-500' },
     { label: 'Active Orders', value: '28', change: '+8.2%', icon: Clock, color: 'text-amber-500' },
     { label: 'Catalog Items', value: catalogProducts.length.toString(), change: '+4.1%', icon: ShoppingBag, color: 'text-indigo-500' },
     { label: 'Safety Compliance', value: '99.8%', change: '+0.2%', icon: HeartHandshake, color: 'text-rose-500' },
@@ -85,7 +85,7 @@ export default function AdminPage() {
               <div key={idx} className="flex-1 flex flex-col items-center gap-2 group">
                 <div className="w-full relative rounded-t-md bg-gradient-to-t from-indigo-600 to-indigo-400 transition-all duration-300 group-hover:from-rose-500 group-hover:to-rose-400" style={{ height: `${(val / 160) * 100}%` }}>
                   <span className="absolute -top-7 left-1/2 -translate-x-1/2 rounded bg-slate-800 px-1.5 py-0.5 text-[9px] font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                    ${val}k
+                    ₹{val}k
                   </span>
                 </div>
                 <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'][idx]}</span>
@@ -155,10 +155,10 @@ export default function AdminPage() {
             </thead>
             <tbody className="divide-y divide-slate-800 text-xs font-medium text-slate-300">
               {[
-                { id: 'ORD-7491', customer: 'Rohan Sharma', model: 'BS-1220A (Rabbit)', amount: '$89.99', status: 'Delivered', statusColor: 'bg-emerald-500/10 text-emerald-400' },
-                { id: 'ORD-7490', customer: 'Simran Jit', model: 'BSP-912 (Ball Pool)', amount: '$219.90', status: 'Processing', statusColor: 'bg-indigo-500/10 text-indigo-400' },
-                { id: 'ORD-7489', customer: 'Ananya Roy', model: 'BS-127 (Toddler Chair)', amount: '$69.00', status: 'Pending', statusColor: 'bg-amber-500/10 text-amber-400' },
-                { id: 'ORD-7488', customer: 'Kabir Mehta', model: 'HL-2008 (Play Table)', amount: '$79.90', status: 'Delivered', statusColor: 'bg-emerald-500/10 text-emerald-400' },
+                { id: 'ORD-7491', customer: 'Rohan Sharma', model: 'BS-1220A (Rabbit)', amount: '₹89.99', status: 'Delivered', statusColor: 'bg-emerald-500/10 text-emerald-400' },
+                { id: 'ORD-7490', customer: 'Simran Jit', model: 'BSP-912 (Ball Pool)', amount: '₹219.90', status: 'Processing', statusColor: 'bg-indigo-500/10 text-indigo-400' },
+                { id: 'ORD-7489', customer: 'Ananya Roy', model: 'BS-127 (Toddler Chair)', amount: '₹69.00', status: 'Pending', statusColor: 'bg-amber-500/10 text-amber-400' },
+                { id: 'ORD-7488', customer: 'Kabir Mehta', model: 'HL-2008 (Play Table)', amount: '₹79.90', status: 'Delivered', statusColor: 'bg-emerald-500/10 text-emerald-400' },
               ].map((row) => (
                 <tr key={row.id} className="hover:bg-slate-900/50 transition-colors">
                   <td className="py-4 px-6 font-bold text-white">{row.id}</td>
@@ -229,7 +229,7 @@ export default function AdminPage() {
                   </td>
                   <td className="py-4 px-6">{p.category}</td>
                   <td className="py-4 px-6 font-bold text-slate-200">
-                    ${p.mrp ? (p.mrp / 10).toFixed(2) : '0.00'}
+                    ₹{p.mrp ? (p.mrp / 10).toFixed(2) : '0.00'}
                   </td>
                   <td className="py-4 px-6 font-mono text-[10px]">{p.dimensions || 'N/A'}</td>
                   <td className="py-4 px-6">

@@ -119,7 +119,7 @@ export default function RockersPage() {
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
-                <span className="font-display text-sm font-extrabold text-primary">${p.price}</span>
+                <span className="font-display text-sm font-extrabold text-primary">₹{p.price}</span>
                 <div className="flex gap-2">
                   <Link
                     href={`/products/${p.id}`}
@@ -247,7 +247,7 @@ export default function RockersPage() {
               </div>
               <div className="space-y-1">
                 <h4 className="font-display text-sm font-bold text-on-surface">Soft Play Mat</h4>
-                <p className="text-secondary font-bold text-xs">$55.00</p>
+                <p className="text-secondary font-bold text-xs">₹55.00</p>
                 <button
                   onClick={() => handleAddToCart('soft-play-mat', 'Soft Play Mat', 55.00)}
                   disabled={addedItem === 'soft-play-mat'}

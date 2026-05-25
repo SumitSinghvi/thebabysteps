@@ -86,7 +86,7 @@ export default function ProductDetailPage({
         origin: 'Handcrafted with Care',
         ageRange: rawProd.category.toLowerCase().includes('furniture') ? 'Ages 3-6' : 'Ages 1-5',
         assembly: 'Minimal Assembly Required',
-        imageUrl: null
+        imageUrl: rawProd.image_url || null
       };
     }
   }
@@ -196,7 +196,7 @@ export default function ProductDetailPage({
               {product.name}
             </h1>
             <p className="font-display text-2xl font-extrabold text-tertiary mt-2">
-              ${product.price.toFixed(0)}
+              ₹{product.price.toFixed(0)}
             </p>
           </div>
 
@@ -383,7 +383,7 @@ export default function ProductDetailPage({
                 Calm Cloud Swing
               </h4>
             </div>
-            <p className="text-tertiary font-extrabold text-xs mt-2">$129</p>
+            <p className="text-tertiary font-extrabold text-xs mt-2">₹129</p>
           </Link>
 
           {/* Related Card 2: Modular Balance Beam */}
@@ -403,7 +403,7 @@ export default function ProductDetailPage({
                 Modular Balance Beam
               </h4>
             </div>
-            <p className="text-tertiary font-extrabold text-xs mt-2">$185</p>
+            <p className="text-tertiary font-extrabold text-xs mt-2">₹185</p>
           </Link>
 
           {/* Related Card 3: Mini Minds Desk */}
@@ -419,7 +419,7 @@ export default function ProductDetailPage({
                 Mini Minds Desk
               </h4>
             </div>
-            <p className="text-tertiary font-extrabold text-xs mt-2">$189</p>
+            <p className="text-tertiary font-extrabold text-xs mt-2">₹189</p>
           </Link>
 
           {/* Related Card 4: Curva Birch Seat */}
@@ -435,7 +435,7 @@ export default function ProductDetailPage({
                 Curva Birch Seat
               </h4>
             </div>
-            <p className="text-tertiary font-extrabold text-xs mt-2">$89</p>
+            <p className="text-tertiary font-extrabold text-xs mt-2">₹89</p>
           </Link>
         </div>
       </section>
