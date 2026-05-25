@@ -1,80 +1,85 @@
 'use client';
 
 import Link from 'next/link';
-import { ShoppingBag, Search, ShieldCheck, Baby } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { Heart, ShoppingBasket, User } from 'lucide-react';
 import { useStorefrontStore } from '@/store/useStorefrontStore';
+
+const navLinks = [
+  { label: 'Shop All', href: '/categories' },
+  { label: 'Preschool', href: '/preschool' },
+  { label: 'Playroom', href: '/play' },
+  { label: 'Sensory', href: '/sensory' },
+  { label: 'Our Story', href: '/our-story' },
+];
 
 export default function StoreHeader() {
   const { cart, setCartOpen } = useStorefrontStore();
+  const pathname = usePathname();
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-surface-container/80 bg-white/75 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 w-full bg-white border-b border-gray-100">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 lg:px-8">
+
         {/* Logo */}
-        <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-primary-container to-primary text-white shadow-md shadow-primary-container/20 transition-all duration-300 group-hover:scale-105">
-              <Baby className="h-5 w-5 animate-pulse" />
-            </div>
-            <span className="font-display text-xl font-bold tracking-tight text-primary transition-all duration-300">
-              BabySteps
-            </span>
-          </Link>
+        <Link href="/" className="font-display text-xl font-bold text-[#1a1a2e] tracking-tight shrink-0 mr-8">
+          BabySteps
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/categories" className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-              Shop All
-            </Link>
-            <Link href="/preschool" className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-              Preschool
-            </Link>
-            <Link href="/play" className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-              Playroom
-            </Link>
-            <Link href="/sensory" className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-              Sensory
-            </Link>
-            <Link href="/" className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">
-              Our Story
-            </Link>
-          </nav>
-        </div>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-7 flex-1">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href || (link.href === '/categories' && pathname === '/');
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`relative text-sm font-medium pb-0.5 transition-colors duration-200 whitespace-nowrap ${
+                  isActive
+                    ? 'text-primary font-semibold'
+                    : 'text-gray-500 hover:text-gray-900'
+                }`}
+              >
+                {link.label}
+                {isActive && (
+                  <span className="absolute -bottom-[17px] left-0 w-full h-[2px] bg-primary rounded-full" />
+                )}
+              </Link>
+            );
+          })}
+        </nav>
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-4">
-          {/* Search Bar */}
-          <div className="relative hidden sm:block">
-            <input
-              type="text"
-              placeholder="Find toys..."
-              className="h-9 w-48 rounded-full border border-surface-container bg-surface-container-low pl-9 pr-4 text-xs text-on-background outline-none transition-all duration-300 focus:w-60 focus:ring-2 focus:ring-primary/20"
-            />
-            <Search className="absolute left-3 top-2.5 h-4 w-4 text-outline" />
-          </div>
-
-          {/* Admin Panel Link */}
-          <Link
-            href="/admin"
-            className="flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-semibold text-on-surface-variant border border-surface-container bg-surface-container-lowest shadow-sm transition-all duration-200 hover:border-primary/30 hover:text-primary hover:bg-primary/5"
+        {/* Action Icons */}
+        <div className="flex items-center gap-5">
+          {/* Wishlist */}
+          <button
+            className="text-gray-500 hover:text-gray-900 transition-colors duration-200"
+            aria-label="Wishlist"
           >
-            <ShieldCheck className="h-4 w-4" />
-            <span className="hidden sm:inline">Admin</span>
-          </Link>
+            <Heart className="h-5 w-5" />
+          </button>
 
-          {/* Cart Icon Button */}
+          {/* Cart */}
           <button
             onClick={() => setCartOpen(true)}
-            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-surface-container bg-surface-container-lowest text-primary shadow-sm transition-all duration-200 hover:border-primary-container hover:scale-105"
+            className="relative text-gray-500 hover:text-gray-900 transition-colors duration-200"
             aria-label="Shopping Cart"
           >
-            <ShoppingBag className="h-5 w-5" />
+            <ShoppingBasket className="h-5 w-5" />
             {totalItems > 0 && (
-              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-[10px] font-bold text-white ring-2 ring-white animate-bounce">
+              <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[9px] font-bold text-white">
                 {totalItems}
               </span>
             )}
+          </button>
+
+          {/* Account */}
+          <button
+            className="text-gray-500 hover:text-gray-900 transition-colors duration-200"
+            aria-label="Account"
+          >
+            <User className="h-5 w-5" />
           </button>
         </div>
       </div>
